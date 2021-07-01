@@ -1,0 +1,6 @@
+venv/*
+dataset/zh-HK/clips/*
+dataset/cv-corpus-6.1-2020-12-11/*
+model_speech/*
+
+
