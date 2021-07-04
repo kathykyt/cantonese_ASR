@@ -7,7 +7,7 @@ Please follow the following to setup and try your training or test
 ===================================================================
 1. Setup:
 
-   System: Ubuntu 20.04
+   System: Ubuntu 20.04, with GPU hardware. 
 
    python3.6: install python3.6 by typing "sudo apt-get install python3.6" 
    
@@ -15,7 +15,7 @@ Please follow the following to setup and try your training or test
 
 3. Create a virtual python environment: "cd catonese_ASR" , run "virtualenv -p /usr/bin/python3.6 venv"
 
-4. setup python virtual environment: "source venvbin/activate" 
+4. setup python virtual environment: "source venv/bin/activate" 
 
 6. Install required packages: "pip install -r requirements.txt" 
 
@@ -28,4 +28,6 @@ by "cp zh-HK.tar.gz {your top diretory}/cantonest_ASR/dataset/ "
 
 8. Since the trained model file will be located under model_speech, so create the direcotry m251 under model_speech/, by "mkdir m251" 
 
-9. 
+9. To start the training, cd catonese_ASR, type "python train_mspeech.py" , remember to change into python virtual environment before issung the command.
+
+
