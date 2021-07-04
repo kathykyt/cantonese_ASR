@@ -6,7 +6,13 @@ This project is a modified version of ASR for Chinese, https://github.com/Cynthi
 Please follow the following to setup and try your training or test
 ===================================================================
 1. Setup:
+
    System: Ubuntu 20.04
+
    python3.6: install python3.6 by typing "sudo apt-get install python3.6" 
    
-2. clone the source code by "git clone 
+2. clone the source code by "git clone https://github.com/kathykyt/cantonese_ASR.git"
+
+3. Create a virtual python environment: "cd catonese_ASR" , run "virtualenv -p /usr/bin/python3.6 venv"
+
+4. 
