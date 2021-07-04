@@ -15,4 +15,6 @@ Please follow the following to setup and try your training or test
 
 3. Create a virtual python environment: "cd catonese_ASR" , run "virtualenv -p /usr/bin/python3.6 venv"
 
-4. 
+4. setup python virtual environment: "pip install -r requirements.txt" 
+
+5. 
