@@ -26,4 +26,6 @@ by "cp zh-HK.tar.gz {your top diretory}/cantonest_ASR/dataset/ "
 
 7. Prepare the wave file for training and testing. Since the commonvoice data is mp3, we have to convert them to .wav files. To convert it, under cantonest_ASR/dataset/ run "./convert_to_mp3.py ", after that run "./convert_to_mp3_test.py". 
 
-8. 
+8. Since the trained model file will be located under model_speech, so create the direcotry m251 under model_speech/, by "mkdir m251" 
+
+9. 
