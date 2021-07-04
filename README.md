@@ -6,4 +6,7 @@ This project is a modified version of ASR for Chinese, https://github.com/Cynthi
 Please follow the following to setup and try your training or test
 ===================================================================
 1. Setup:
-2. 
+   System: Ubuntu 20.04
+   python3.6: install python3.6 by typing "sudo apt-get install python3.6" 
+   
+2. clone the source code by "git clone 
