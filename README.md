@@ -9,8 +9,6 @@ Please follow the following to setup and try your training or test
 
    System: Ubuntu 20.04, with GPU hardware. 
    
-   Sun Jul  4 22:02:37 2021       
-   
 +-----------------------------------------------------------------------------+
 
 | NVIDIA-SMI 460.80       Driver Version: 460.80       CUDA Version: 11.2     |
