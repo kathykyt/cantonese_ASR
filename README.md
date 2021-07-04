@@ -15,24 +15,6 @@ Please follow the following to setup and try your training or test
 
 | NVIDIA-SMI 460.80       Driver Version: 460.80       CUDA Version: 11.2     |
 
-|-------------------------------+----------------------+----------------------+
-
-| GPU  Name        Persistence-M| Bus-Id        Disp.A | Volatile Uncorr. ECC |
-
-| Fan  Temp  Perf  Pwr:Usage/Cap|         Memory-Usage | GPU-Util  Compute M. |
-
-|                               |                      |               MIG M. |
-
-|===============================+======================+======================|
-
-|   0  GeForce GTX 1650    Off  | 00000000:01:00.0  On |                  N/A |
-
-|  0%   52C    P8     6W /  75W |    369MiB /  3909MiB |      2%      Default |
-
-|                               |                      |                  N/A |
-
-+-------------------------------+----------------------+----------------------+
-
 
    python3.6: install python3.6 by typing "sudo apt-get install python3.6" 
    
@@ -55,4 +37,4 @@ by "cp zh-HK.tar.gz {your top diretory}/cantonest_ASR/dataset/ "
 
 9. To start the training, cd catonese_ASR, type "python train_mspeech.py" , remember to change into python virtual environment before issung the command.
 
-
+10. Please be patient, the training is very slow even with GPU.
