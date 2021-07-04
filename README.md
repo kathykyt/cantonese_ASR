@@ -10,17 +10,29 @@ Please follow the following to setup and try your training or test
    System: Ubuntu 20.04, with GPU hardware. 
    
    Sun Jul  4 22:02:37 2021       
+   
 +-----------------------------------------------------------------------------+
+
 | NVIDIA-SMI 460.80       Driver Version: 460.80       CUDA Version: 11.2     |
+
 |-------------------------------+----------------------+----------------------+
+
 | GPU  Name        Persistence-M| Bus-Id        Disp.A | Volatile Uncorr. ECC |
+
 | Fan  Temp  Perf  Pwr:Usage/Cap|         Memory-Usage | GPU-Util  Compute M. |
+
 |                               |                      |               MIG M. |
+
 |===============================+======================+======================|
+
 |   0  GeForce GTX 1650    Off  | 00000000:01:00.0  On |                  N/A |
+
 |  0%   52C    P8     6W /  75W |    369MiB /  3909MiB |      2%      Default |
+
 |                               |                      |                  N/A |
+
 +-------------------------------+----------------------+----------------------+
+
 
    python3.6: install python3.6 by typing "sudo apt-get install python3.6" 
    
