@@ -19,4 +19,5 @@ Please follow the following to setup and try your training or test
 
 6. Install required packages: "pip install -r requirements.txt" 
 
-5. 
+5. Visit https://commonvoice.mozilla.org/en/datasets and select the download the cantonese dataset file, zh-HK_100h_2020-12-11 to download, the file is zh-HK.tar.gz. copy it under the directory, cantonest_ASR/dataset/
+by "cp zh-HK.tar.gz {your top diretory}/cantonest_ASR/dataset/ "
