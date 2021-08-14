@@ -1,6 +1,7 @@
 venv/*
 dataset/zh-HK/clips/*
 dataset/cv-corpus-6.1-2020-12-11/*
-model_speech/*
+model_speech/m251/*
 
-
+general_function/__pycache__/*
+__pycache__/*
