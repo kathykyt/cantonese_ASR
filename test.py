@@ -31,30 +31,17 @@ else:
 
 ms = ModelSpeech(datapath)
 
-#ms.LoadModel(modelpath + 'm22_2\\0\\speech_model22_e_0_step_257000.model')
-#ms.LoadModel(modelpath + 'm251_20210319/speech_model251_e_0_step_56000.model')
-#ms.LoadModel(modelpath + 'm251_20210319/speech_model251_e_0_step_61000.model')
-#ms.LoadModel(modelpath + 'm251_20210330/speech_model251_e_0_step_20000.model')
-#ms.LoadModel(modelpath + 'm251_20210331/speech_model251_e_0_step_18500.model')
-#ms.LoadModel(modelpath + 'm251_20210401/speech_model251_e_0_step_19500.model')
-#ms.LoadModel(modelpath + 'm251_20210407/speech_model251_e_0_step_43500.model')
 #ms.LoadModel(modelpath + 'm251_20210419/speech_model251_e_0_step_39500.model')
-ms.LoadModel(modelpath + 'm251_20210425/speech_model251_e_0_step_20000.model')
-#ms.LoadModel(modelpath + 'm251_20210407/speech_model251_e_0_step_44000.model')
+#ms.LoadModel(modelpath + 'm251_20210425/speech_model251_e_0_step_20000.model')
+ms.LoadModel(modelpath + 'm251_20210813/speech_model251_e_0_step_41000.model')
 
 #ms.TestModel(datapath, str_dataset='test', data_count = 64, out_report = True)
-#r = ms.RecognizeSpeech_FromFile('/opt/git/ASRT_SpeechRecognition/ASR_cantonese/dataset/zh-HK/clips/common_voice_zh-HK_23641226.wav')
-#r = ms.RecognizeSpeech_FromFile('/opt/git/ASRT_SpeechRecognition/ASR_cantonese/dataset/zh-HK/clips/common_voice_zh-HK_20096731.wav')
-#r = ms.RecognizeSpeech_FromFile('/opt/git/ASRT_SpeechRecognition/ASR_cantonese/dataset/zh-HK/clips/common_voice_zh-HK_20096733.wav')
-#r = ms.RecognizeSpeech_FromFile('/opt/git/ASRT_SpeechRecognition/ASR_cantonese/dataset/zh-HK/clips/common_voice_zh-HK_22111214.wav')
+
 #r = ms.RecognizeSpeech_FromFile('/opt/git/ASRT_SpeechRecognition/ASR_cantonese/dataset/zh-HK/clips/common_voice_zh-HK_23385878.wav')
 #r = ms.RecognizeSpeech_FromFile('/opt/git/ASRT_SpeechRecognition/ASR_cantonese/try/006.wav')
 #r = ms.RecognizeSpeech_FromFile('/opt/git/cantonest_ASR/test/common_voice_zh-HK_24020802.wav')
 r = ms.RecognizeSpeech_FromFile('/opt/git/cantonest_ASR/test/common_voice_zh-HK_23734008.wav')
-#r = ms.RecognizeSpeech_FromFile('D:\语音数据集\ST-CMDS-20170001_1-OS\\20170001P00241I0053.wav')
-#r = ms.RecognizeSpeech_FromFile('D:\\语音数据集\\ST-CMDS-20170001_1-OS\\20170001P00020I0087.wav')
-#r = ms.RecognizeSpeech_FromFile('D:\\语音数据集\\data_thchs30\\data\\A11_167.WAV')
-#r = ms.RecognizeSpeech_FromFile('D:\\语音数据集\\data_thchs30\\data\\D4_750.wav')
+
 
 K.clear_session()
 

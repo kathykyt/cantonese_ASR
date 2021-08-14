@@ -194,6 +194,13 @@ class DataSpeech():
 		
 		# 获取输入特征
 		data_input = GetFrequencyFeature3(wavsignal,fs)
+
+		if (len(data_input) == 1):
+		   print("error of wav file detected");
+		   print(filename);
+		   return ([-1], [-1]);
+		
+
 		#data_input = np.array(data_input)
 		data_input = data_input.reshape(data_input.shape[0],data_input.shape[1],1)
 		#arr_zero = np.zeros((1, 39), dtype=np.int16) #一个全是0的行向量
@@ -240,7 +247,7 @@ class DataSpeech():
 				#data_input, data_labels = self.GetData((ran_num + i) % self.DataNum)  # 从随机数开始连续向后取一定数量数据
 				
 				#make sure it the len cannot exceed 1600, if exceed, get random number again.
-				while (len(data_input) > 1600):
+				while ((len(data_input) > 1600) or (len(data_input) <= 25)):
 				   ran_num = random.randint(0,self.DataNum - 1) # 获取一个随机数
 				   data_input, data_labels = self.GetData(ran_num)  # 通过随机数取一个数据
 				

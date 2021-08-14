@@ -125,6 +125,11 @@ def GetFrequencyFeature3(wavsignal, fs):
 	wav_length = wav_arr.shape[1]
 	
 	range0_end = int(len(wavsignal[0])/fs*1000 - time_window) // 10 # 计算循环终止的位置，也就是最终生成的窗数
+
+	if (range0_end <= 0):
+	   return [-1];
+
+
 	data_input = np.zeros((range0_end, 200), dtype = np.float) # 用于存放最终的频率特征数据
 	data_line = np.zeros((1, 400), dtype = np.float)
 	

@@ -13,7 +13,7 @@ import tensorflow as tf
 #import tensorflow.compat.v1 as tf
 #tf.disable_v2_behavior()
 
-#windfat hack
+#david hack
 #tf.enable_eager_execution() # 关键
 
 from keras.backend.tensorflow_backend import set_session
@@ -33,7 +33,7 @@ config.gpu_options.per_process_gpu_memory_fraction = 0.8
 #config.gpu_options.allow_growth=True
 
 
-#windfat hack
+#david hack
 #tf.compat.v1.keras.backend.clear_session()
 
 #config.gpu_options.allow_growth=True   #不全部占满显存, 按需分配
@@ -63,18 +63,11 @@ else:
 
 ms = ModelSpeech(datapath)
 
-#ms.LoadModel(modelpath + 'speech_model251_e_0_step_327500.model')
-#ms.LoadModel(modelpath + 'm251_backup/speech_model251_e_0_step_12000.model')
-#ms.LoadModel(modelpath + 'm251_20210222/speech_model251_e_0_step_14500.model')
-#ms.LoadModel(modelpath + 'm251_20210226/speech_model251_e_0_step_17500.model')
-#ms.LoadModel(modelpath + 'm251_20210226/speech_model251_e_0_step_18000.model')
-#ms.LoadModel(modelpath + 'm251_20210301/speech_model251_e_0_step_5500.model')
-#ms.LoadModel(modelpath + 'm251_20210308/speech_model251_e_0_step_10000.model')
-ms.LoadModel(modelpath + 'm251_20210407/speech_model251_e_0_step_44000.model')
 
-#ms.TrainModel(datapath, epoch = 50, batch_size = 16, save_step = 500)
-#ms.TrainModel(datapath, epoch = 50, batch_size = 16, save_step = 5)
-ms.TrainModel(datapath, epoch = 50, batch_size = 8, save_step = 500)
+#ms.LoadModel(modelpath + 'm251_20210804/speech_model251_e_0_step_2500.model')
+ms.LoadModel(modelpath + 'm251_20210813/speech_model251_e_0_step_41000.model')
+
+ms.TrainModel(datapath, epoch = 50, batch_size = 16, save_step = 500)
 #ms.TrainModel(datapath, epoch = 50, batch_size = 16, save_step = 500)
 
 
