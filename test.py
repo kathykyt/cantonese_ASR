@@ -32,15 +32,17 @@ else:
 ms = ModelSpeech(datapath)
 
 #ms.LoadModel(modelpath + 'm251_20210419/speech_model251_e_0_step_39500.model')
-#ms.LoadModel(modelpath + 'm251_20210425/speech_model251_e_0_step_20000.model')
-ms.LoadModel(modelpath + 'm251_20210813/speech_model251_e_0_step_41000.model')
+ms.LoadModel(modelpath + 'm251_20210425/speech_model251_e_0_step_20000.model')
+#ms.LoadModel(modelpath + 'm251_20210813/speech_model251_e_0_step_41000.model')
 
 #ms.TestModel(datapath, str_dataset='test', data_count = 64, out_report = True)
 
 #r = ms.RecognizeSpeech_FromFile('/opt/git/ASRT_SpeechRecognition/ASR_cantonese/dataset/zh-HK/clips/common_voice_zh-HK_23385878.wav')
 #r = ms.RecognizeSpeech_FromFile('/opt/git/ASRT_SpeechRecognition/ASR_cantonese/try/006.wav')
 #r = ms.RecognizeSpeech_FromFile('/opt/git/cantonest_ASR/test/common_voice_zh-HK_24020802.wav')
-r = ms.RecognizeSpeech_FromFile('/opt/git/cantonest_ASR/test/common_voice_zh-HK_23734008.wav')
+#r = ms.RecognizeSpeech_FromFile('/opt/git/cantonest_ASR/test/common_voice_zh-HK_23734008.wav')
+r = ms.RecognizeSpeech_FromFile(datapath + 'dataset/zh-HK/clips/common_voice_zh-HK_24012272.wav')
+#r = ms.RecognizeSpeech_FromFile(datapath + 'dataset/zh-HK/clips/common_voice_zh-HK_24020788.wav')
 
 
 K.clear_session()
