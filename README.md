@@ -36,3 +36,7 @@ by "cp zh-HK.tar.gz {your top diretory}/cantonest_ASR/dataset/ "
 9. To start the training, cd catonese_ASR, type "python train_mspeech.py" , remember to change into python virtual environment before issung the command.
 
 10. Please be patient, the training is very slow even with GPU.
+
+Another model based on wav2vec is under:
+==========================================
+https://github.com/windfat/cantoneseASR_jyutping
